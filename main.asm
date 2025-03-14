@@ -32,4 +32,6 @@ _start:
     mov     eax, output
     call    strprint
 
-    call    quit
+    mov     ebx, 0
+    mov     eax, 1
+    int     80h
