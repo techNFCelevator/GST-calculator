@@ -13,14 +13,6 @@ finished:
     pop     ebx
     ret
 
-calculate:
-    fld     gst
-    fiadd   1
-    fstp    tax
-    fld     input
-    fmul    tax
-    fstp    output
-
 quit:
     mov     ebx, 0
     mov     eax, 1

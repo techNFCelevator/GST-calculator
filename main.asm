@@ -7,8 +7,8 @@ msg2    db  'After GST factored: ', 0h
 
 SECTION .bss
 input:  RESQ    8
-output: RESQ    1
-tax:    RESQ    1
+output: RESQ    8
+tax:    RESQ    8
 
 SECTION .text
 global _start
