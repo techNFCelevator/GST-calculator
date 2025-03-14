@@ -39,7 +39,7 @@ strprint:
     pop     edx
     ret
 
-    calculate:
+calculate:
     finit
     fld     dword[gst]
     fstp    dword[output]
