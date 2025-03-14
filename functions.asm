@@ -13,12 +13,6 @@ finished:
     pop     ebx
     ret
 
-quit:
-    mov     ebx, 0
-    mov     eax, 1
-    int     80h
-    ret
-
 strprint:
     push    edx
     push    ecx
@@ -38,7 +32,7 @@ strprint:
     pop     ecx
     pop     edx
     ret
-
+    
 calculate:
     finit
     fld1
