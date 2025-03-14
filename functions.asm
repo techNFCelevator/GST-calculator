@@ -41,6 +41,8 @@ strprint:
 
 calculate:
     finit
+    fld1
     fld     dword[gst]
+    fadd
     fstp    dword[output]
     ret
