@@ -38,3 +38,9 @@ strprint:
     pop     ecx
     pop     edx
     ret
+
+    calculate:
+    finit
+    fld     dword[gst]
+    fstp    dword[output]
+    ret

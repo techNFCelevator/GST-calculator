@@ -18,7 +18,7 @@ _start:
     mov     eax, msg1
     call    strprint
 
-    mov     edx, 8
+    mov     edx, 256
     mov     ecx, input
     mov     ebx, 0
     mov     eax, 3
@@ -26,7 +26,9 @@ _start:
     
     mov     eax, msg2
     call    strprint
-
+    
+    call    calculate
+    
     mov     eax, output
     call    strprint
 
