@@ -13,6 +13,14 @@ finished:
     pop     ebx
     ret
 
+calculate:
+    fld     gst
+    fiadd   1
+    fstp    tax
+    fld     input
+    fmul    tax
+    fstp    output
+
 strprint:
     push    edx
     push    ecx
